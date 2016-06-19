@@ -1,0 +1,42 @@
+{
+  "name": "simple-websocket-server",
+  "version": "0.0.0",
+  "description": "WebSockets server that mimics the Node.js `net` module API, yielding duplex streams instead of the 'onmessage/send' WebSockets API. Compatible with simple-websocket (https://github.com/feross/simple-websocket)",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "aegir-lint",
+    "build": "aegir-build --env node",
+    "test": "aegir-test --env node",
+    "release": "aegir-release --env node",
+    "release-minor": "aegir-release --type minor --env node",
+    "release-major": "aegir-release --type major --env node",
+    "coverage": "aegir-coverage",
+    "coverage-publish": "aegir-coverage publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diasdavid/simple-websocket-server.git"
+  },
+  "keywords": [
+    "WebSocket",
+    "WebSockets",
+    "Server",
+    "Streams"
+  ],
+  "author": "David Dias <mail@daviddias.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diasdavid/simple-websocket-server/issues"
+  },
+  "homepage": "https://github.com/diasdavid/simple-websocket-server#readme",
+  "dependencies": {
+    "ws": "^1.1.0"
+  },
+  "devDependencies": {
+    "aegir": "^3.2.0",
+    "bl": "^1.1.2",
+    "chai": "^3.5.0",
+    "pre-commit": "^1.1.3",
+    "simple-websocket": "^4.1.0"
+  }
+}
