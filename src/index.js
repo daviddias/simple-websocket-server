@@ -70,7 +70,10 @@ function Server (options) {
       // if (socketCounter > 0) {
       //  return setTimeout(close, 100)
       // }
-      wsServer.close(callback)
+      wsServer.close(() => {
+        wsServer.emit('close')
+        callback()
+      })
     }
     close()
   }

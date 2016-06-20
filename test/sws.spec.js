@@ -43,6 +43,14 @@ describe('.createServer', () => {
       })
     })
 
+    it('listen, check for close event', (done) => {
+      server.listen(options)
+      server.on('listening', () => {
+        server.on('close', done)
+        server.close()
+      })
+    })
+
     it('listen, use port as arg', (done) => {
       server.listen(9090)
       server.on('listening', () => {
