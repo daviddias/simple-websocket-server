@@ -1,6 +1,6 @@
 {
   "name": "simple-websocket-server",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "WebSockets server that mimics the Node.js `net` module API, yielding duplex streams instead of the 'onmessage/send' WebSockets API. Compatible with simple-websocket (https://github.com/feross/simple-websocket)",
   "main": "src/index.js",
   "scripts": {
