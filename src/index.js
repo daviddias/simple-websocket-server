@@ -75,7 +75,7 @@ function Server (options) {
         callback()
       })
     }
-    close()
+    process.nextTick(close)
   }
 }
 
