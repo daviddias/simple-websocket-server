@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/diasdavid/simple-websocket-server#readme",
   "dependencies": {
-    "ws": "^5.1.0"
+    "ws": "^6.2.1"
   },
   "devDependencies": {
     "aegir": "^9.3.0",
